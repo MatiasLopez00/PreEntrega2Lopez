@@ -7,46 +7,9 @@ html{
     font-size: 62.5%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*Body*/
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.logo{
-  width: 2rem;
-  height: 2rem;
-}
-.homeArticle{
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  'item00 item6 item00'
-  'item00 item7 item00'
-  'item00 item8 item00'
-  'item00 item8 item00';
-}
-.homeH1{
-  grid-area: item6;
-}
-.articleImg{
-  grid-area: item7;
-  width: 10rem;
-  height: 8rem;
-}
-.homeP{
-  grid-area: item8;
-}
 
-@media (max-width:440px){
-      body{
-        background-color: blueviolet;
-      }
-    }
     /*inicio del body*/
-    /*header*/
-   
+    /*header*/ 
     .container {
       background-color: #1b263b;
       display: grid;
@@ -184,4 +147,9 @@ html{
     .blogP1{
       grid-area: item02;
     }
-    
+    @media screen and (max-width:767px){
+       .container{
+        display: flex;
+        flex-direction: column;
+       }
+    } 
