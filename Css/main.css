@@ -17,25 +17,29 @@ header nav img{
 
     /*ContenidoArticle*/
     .homeArticle{
-      display: grid;
-      grid-template-columns: 0.3fr 1fr 1fr;
-      grid-template-rows: 0.3fr 2fr 1fr;
-      grid-template-areas:
+      display: block;
+      /*grid-template-areas:
       'item11 item11 item11'
       'item22 item22 item22'
-      'item22 item22 item22';
+      'item22 item22 item22';*/
       width: 90%;
       margin-left: 5rem;
     }
-    .homeH1{
-      margin: 2rem;
-      grid-area: item11;
+    .containerH1{
+      margin: 3rem;
+    }
+    .hH1index{
+     /* grid-area: item11;*/
+      margin: 3rem;
+
     }
     .homeSection{
-      grid-area: item22;
+      padding: 2rem;
+      /*grid-area: item22;*/
       /*background-color: #415a77;*/
     }
     .hemeP{
+      margin-left: 2rem;
       /*grid-area: item3;*/
       
    }
@@ -49,12 +53,13 @@ header nav img{
 
     /*Footer*/
     footer{
+      margin-left: 5rem;
       display: grid;
-      grid-template-columns: 1.5fr 2.5fr 1fr;
-      grid-template-areas: 'item10 item20 item30';
+      grid-template-areas: 'item10 item50 item30';
       width: 100%;
     }
     footer ul{
+      margin-left: 1rem;
       grid-area: item30;
       text-align: right;
       list-style: none;
@@ -65,6 +70,15 @@ header nav img{
       height: 24px;
       margin: 0 10px;
       
+    }
+    .textoFooter{
+      font-weight: bold;
+      color: black;
+    }
+    .enlaceFooter{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
     }
     /*PagFotos*/
     .carousel-inner{
@@ -77,52 +91,146 @@ header nav img{
       /*margin-left: 11rem;*/
      padding: 5rem;
     }
+    .FotosH1{
+      margin-top: 0.5rem;
+      margin-left: 1rem;
+      font-weight: bold;
+    }
     /*PaginaBlog*/
     .BlogSection{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: 
-      'item02 item02 item02'
-      'item03 item03 item03'
-      'item04 item04 item04';
-
+      margin: 2rem;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: flex-start;
+      background-color: #303633;
+      
     }
     .SectionH1{
-      grid-area: item02;
+      margin-top: 1rem;
+      color: #DAFFED;
+      margin-left: 1rem;
+      text-align: left;
+      opacity: none;
     }
     .blogP1{
-      grid-area: item02;
+      opacity: none;
+      color: #DAFFED;
+    }
+    .blogP{
+      padding: 0.5rem;
+      margin: 1rem;
+      color: #DAFFED;
+    }
+    .blogImg{
+      width: 30rem;
+      height: 30rem;
+      opacity: none;
+    }
+    .BlogSection hr{
+      color: #DAFFED;
+    }
+
+    .mapa{
+      margin: 5rem;
+      align-items: flex-end;
+      border-radius: 15%;
+      border: 10px;
+      border-color: #303633;
     }
     /*PaginaMusica*/
-    section.musica{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 2fr 0.5fr 0.5fr;
-      grid-template-areas: 
-      'item1 item2'
-      'item3 item3'
-      'item4 item4';
+    .MusicDiv{
+      margin-left: 8rem;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
     }
-    .item1{
-      grid-area: item1;
-      padding: 1rem;
+    .iframe1{
+      margin-right: 1rem;
+      width: 40%;
+      border-radius: 10%;
     }
-    .item2{
-      padding: 1rem;
-      grid-area: item2;
+    .iframe2{
+      width: 40%;
+      border-radius: 10%;
     }
-    .item3{
-      grid-area: item3;
+    /*.h2{
+      grid-area: h2Place;
+      
     }
-    .item4{
-      grid-area: item4;
+    .musica hr{
+      grid-area: hr;
     }
+    .p{
+      grid-area: Pplace;
+    }*/
     .musicaH1{
       text-align: center;
+      font-weight: bold;
     }
-    @media screen and (max-width:767px){
+    @media (max-width:990px){
+      /*Index*/
+      .homeArticle{
+        display: flex;
+        flex-direction: column;
+      }
+      .homeSection{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .articleImg{
+        margin-bottom: 5rem;
+        width: 60rem;
+        height: 38rem;
+      }
+      .containerH1{
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        margin-left: 38rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 25rem;
+      }
+      .H1index{
+        text-align: center;
+        border: 2px solid;
+        border-color: #303633;
+        border-radius: 10%;
+      }
+      .homeP{
+        width: 75%;
+        text-align: center;
+        margin-left: 5rem;
+      }
+      /*Fotos*/
+      .FotosH1{
+        text-align: center;
+      }
+      /*Blog*/
+      .SectionH1{
+        text-align: center;
+      }
+      .mapa{
+        
+        margin-left: 10rem;
+      }
+      /*Artista*/
       /*Musica*/
-      section.muscica: 
-            display: flex;
+      .MusicDiv{
+        display: flex;
+        flex-direction: column;
     }
+    .iframe1{
+      min-width: 70%;
+    }
+    .iframe2{
+      min-width: 70%;
+    }
+  }
