@@ -13,14 +13,40 @@ html{
   flex-direction: column;
   align-items: center;
 }
+.logo{
+  width: 2rem;
+  height: 2rem;
+}
+.homeArticle{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  'item00 item6 item00'
+  'item00 item7 item00'
+  'item00 item8 item00'
+  'item00 item8 item00';
+}
+.homeH1{
+  grid-area: item6;
+}
+.articleImg{
+  grid-area: item7;
+  width: 10rem;
+  height: 8rem;
+}
+.homeP{
+  grid-area: item8;
+}
 
-
-
-/*
-    @media (min-width:414px){
+@media (max-width:440px){
+      body{
+        background-color: blueviolet;
+      }
+    }
     /*inicio del body*/
     /*header*/
-    /*
+   
     .container {
       background-color: #1b263b;
       display: grid;
@@ -58,7 +84,7 @@ html{
       background-color: #415a77;
     }
 
-    /*ContenidoArticle*//*
+    /*ContenidoArticle*/
     .homeArticle{
       display: grid;
       grid-template-columns: 0.3fr 1fr 1fr;
@@ -77,20 +103,20 @@ html{
     .homeSection{
       grid-area: item22;
       /*background-color: #415a77;*/
-    /*}
+    }
     .hemeP{
       /*grid-area: item3;*/
       
-    /*}
+   }
     .articleImg{
       margin-bottom: 5rem;
       margin-left: 10rem;
-      /*grid-area: item2;*//*
+      /*grid-area: item2;*/
       width: 60rem;
       height: 38rem;
     }
 
-    /*Footer*//*
+    /*Footer*/
     footer{
       display: grid;
       grid-template-columns: 1.5fr 2.5fr 1fr;
@@ -109,7 +135,7 @@ html{
       margin: 0 10px;
       
     }
-    /*PagFotos*//*
+    /*PagFotos*/
     .containerDiv{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -141,7 +167,7 @@ html{
       width: 250px;
       height: 200;
     }
-    /*PaginaBlog*//*
+    /*PaginaBlog*/
     .BlogSection{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
