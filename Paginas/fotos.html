@@ -3,33 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DJBLACK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/main.css">
 </head>
 <body class="fotos">
   <header class="container">
-    <div class="logo">
-        <img src="../img/logo2.png" alt="Logo de DJBLACK" class="logo">
-      </div> <!-- barra de navegacion -->
-      <nav class="headerNav">
-        <ul>
-          <li class="menu1"><a href="../index.html" class="headerA">Home</a></li>
-          <li class="menu2"><a href="./blog.html" class="headerA">Blog</a></li>
-          <li class="menu3"><a href="./musica.html" class="headerA">Musica</a></li>
-          <li class="menu4"><a href="./artistas.html" class="headerA">Artistas</a></li>
-          <li class="menu5"><a href="./fotos.html" class="headerA">Fotos</a></li>
-        </ul>
-      </nav>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark"">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo2.png" alt="LogoDj">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./fotos.html">Fotos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./musica.html">Musica</a>
+            </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="./artistas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">EL7</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
 </header>
   <h1 class="FotosH1">Algunas fotos</h1>
   <hr class="FotosH1">
- <div class="containerDiv">
-    <img src="../img/lauposandoprodu.jpg" alt="" class="foto1"><br>
-    <img src="../img/tocandoremerablanca.jpg" alt="" class="foto2">
-    <img src="../img/tocandofachera.jpg" alt="" class="foto3">
-</div>
-
-
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/tocandoremerablanca3.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/producerca.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/tocandofachera.jpg" class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
         <footer>
           <div>
               <a href="" class="social-icon"><img src="../img/twitch.png" alt="twitch"></a>
