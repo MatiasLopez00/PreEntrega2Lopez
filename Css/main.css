@@ -245,6 +245,15 @@ header nav img{
       .SectionH1{
         text-align: center;
       }
+      .blogP1{
+        text-align: center;
+        margin: 2rem;
+      }
+      .blogImg{
+        border-radius: 10%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
       .mapa{
         
         margin-left: 1rem;
