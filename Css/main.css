@@ -169,6 +169,23 @@ header nav img{
       text-align: center;
       font-weight: bold;
     }
+    /*Artistas*/
+    .card{
+      /*border: 5px;*/
+      border-color: #303633;
+      margin: 3rem;
+      align-items: end;
+    }
+    .ArtistasMain{
+      margin: 3rem;
+    }
+    .ArtistasMain p{
+      text-align: center;
+    }
+    .ArtistasMain h1{
+      margin: 1rem;
+      font-weight: bold;
+    }
     @media (max-width:990px){
       /*Index*/
       .homeArticle{
@@ -222,6 +239,10 @@ header nav img{
         margin-left: 10rem;
       }
       /*Artista*/
+      .ArtistasMain h1{
+        text-align: center;
+       
+      }
       /*Musica*/
       .MusicDiv{
         display: flex;
