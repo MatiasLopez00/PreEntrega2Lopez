@@ -1,0 +1,62 @@
+@media (max-width:480px){
+        
+    footer{
+      width: 90%;
+    }
+    /*Index*/
+    .ContainerH1{
+      margin-top: 1.5rem;
+      margin-left: 38rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      width: 25rem;
+    }
+    .homeArticle{
+      display: flex;
+      flex-direction: column;
+    }
+    .homeSection{
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .articleImg{
+      margin-bottom: 5rem;
+      width: 60rem;
+      height: 38rem;
+    }
+    .homeP{
+      width: 75%;
+      text-align: center;
+      margin-left: 5rem;
+    }
+    /*Fotos*/
+    .FotosH1{
+      text-align: center;
+    }
+    /*Blog*/
+    .SectionH1{
+      text-align: center;
+    }
+    .blogP1{
+      text-align: center;
+      margin: 2rem;
+    }
+    .blogImg{
+      border-radius: 10%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .mapa{
+      margin-left: 1rem;
+    }
+    /*Artista*/
+    .ArtistasMain h1{
+      text-align: center;
+    }
+}

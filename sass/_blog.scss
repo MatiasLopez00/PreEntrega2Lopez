@@ -1,0 +1,40 @@
+    /*PaginaBlog*/
+      .BlogSection{
+        margin: 2rem;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: flex-start;
+        background-color: #303633; 
+                .SectionH1{
+                    margin-top: 1rem;
+                    color: #DAFFED;
+                    margin-left: 1rem;
+                    text-align: left;
+                    opacity: none;
+                }
+                .blogP1{
+                    opacity: none;
+                    color: #DAFFED;
+                }
+                .blogP{
+                    padding: 0.5rem;
+                    margin: 1rem;
+                    color: #DAFFED;
+                }
+                .blogImg{
+                    width: 30rem;
+                    height: 30rem;
+                    opacity: none;
+                }
+                .BlogSection hr{
+                    color: #DAFFED;
+                }
+      }
+      .mapa{
+        margin: 5rem;
+        align-items: flex-end;
+        border-radius: 15%;
+        border: 10px;
+        border-color: #303633;
+      }
