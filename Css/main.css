@@ -1,275 +1,237 @@
+/*ContenidoArticle*/
+.homeArticle {
+  width: 90%;
+  margin-left: 5rem;
+}
+.homeArticle .H1index {
+  margin: 3rem;
+  font-weight: bolder;
+}
+.homeArticle .homeSection {
+  padding: 2rem;
+}
+.homeArticle .hemeP {
+  text-align: left;
+  margin-left: 2rem;
+}
+.homeArticle .articleImg {
+  margin: 10%;
+  width: 65%;
+  height: 38rem;
+}
 
-*{
-  margin: 0;
-  padding: 0;
+.ContainerH1 {
+  margin: 3rem;
+  font-weight: bold;
 }
-html{
-width: 100%;
-  font-size: 62.5%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+/*PaginaMusica*/
+.MusicDiv {
+  margin-bottom: 10%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }
-  /*inicio del body*/
-  /*header*/ 
-header nav img{
-width: 3.5rem;
-height: 3rem;
+.MusicDiv .iframe1 {
+  margin-right: 1rem;
+  width: 40%;
+  height: 40rem;
+  border-radius: 10%;
 }
-.navbar-expand-lg .navbar-nav{
-flex-direction: row;
-padding: 1rem;
-margin-inline: auto;
-justify-content: space-around;
-width: 100%;
+.MusicDiv .iframe2 {
+  width: 40%;
+  height: 40rem;
+  border-radius: 10%;
 }
-  /*ContenidoArticle*/
-  .homeArticle{
-    display: block;
-    /*grid-template-areas:
-    'item11 item11 item11'
-    'item22 item22 item22'
-    'item22 item22 item22';*/
+
+.musicaH1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Artistas*/
+.card {
+  border-color: #303633;
+  margin: 3rem;
+  align-items: end;
+}
+
+.ArtistasMain {
+  margin: 3rem;
+}
+.ArtistasMain .ArtistasMain p {
+  text-align: center;
+}
+.ArtistasMain .ArtistasMain h1 {
+  margin: 1rem;
+  font-weight: bold;
+}
+
+/*PaginaBlog*/
+.BlogSection {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: flex-start;
+  background-color: #303633;
+}
+.BlogSection .SectionH1 {
+  margin-top: 1rem;
+  color: #DAFFED;
+  margin-left: 1rem;
+  text-align: left;
+}
+.BlogSection .blogP1 {
+  opacity: none;
+  color: #DAFFED;
+}
+.BlogSection .blogP {
+  padding: 0.5rem;
+  margin: 1rem;
+  color: #DAFFED;
+}
+.BlogSection .blogImg {
+  width: 25%;
+  height: 90%;
+  opacity: none;
+}
+.BlogSection .BlogSection hr {
+  color: #DAFFED;
+}
+
+.mapa {
+  margin: 5rem;
+  align-items: flex-end;
+  border-radius: 15%;
+  border: 10px;
+  border-color: #303633;
+}
+
+@media (max-width: 480px) {
+  footer {
     width: 90%;
+  }
+  /*Index*/
+  div.ContainerH1 {
+    width: 90%;
+  }
+  div.ContainerH1 h1 {
+    text-align: center;
+  }
+  article.homeArticle section.homeSection {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  article.homeArticle section.homeSection p.homeP {
+    width: 75%;
+    text-align: center;
     margin-left: 5rem;
   }
-  .ContainerH1{
-    margin: 3rem;
-  }
-  .H1index{
-   /* grid-area: item11;*/
-    margin: 3rem;
-    font-weight: bold;
-  }
-  .homeSection{
-    padding: 2rem;
-    /*grid-area: item22;*/
-    /*background-color: #415a77;*/
-  }
-  .hemeP{
-    margin-left: 2rem;
-    /*grid-area: item3;*/
-    
- }
-  .articleImg{
+  article.homeArticle section.homeSection img.articleImg {
     margin-bottom: 5rem;
-    margin-left: 10rem;
-    /*grid-area: item2;*/
-    width: 60rem;
-    height: 38rem;
+    width: 35%;
+    height: 35rem;
   }
-  /*Footer*/
-  footer{
-    margin-left: 3rem;
-    display: grid;
-    grid-template-areas: 'item10 item50 item30';
+  /*Fotos*/
+  .FotosH1 {
+    text-align: center;
+  }
+  /*Blog*/
+  .SectionH1 {
     width: 100%;
+    height: 20%;
   }
-  footer ul{
-    margin-left: 1rem;
-    grid-area: item30;
-    text-align: right;
-    list-style: none;
+  .SectionH1 h1 {
+    text-align: center;
   }
-  .social-icon img {
-    grid-area: item10;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px;
-    
-  }
-  .textoFooter{
-    font-weight: bold;
-    color: black;
-  }
-  .enlaceFooter{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  /*PagFotos*/
-  .carousel-inner{
-    max-width: 100%;
-   height: 80rem;
-  }
-  .carousel-inner div img{
-    /*max-width: 85%;*/
-    max-height: 780px;
-    /*margin-left: 11rem;*/
-   padding: 5rem;
-  }
-  .FotosH1{
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-    font-weight: bold;
-  }
-  /*PaginaBlog*/
-  .BlogSection{
+  .blogP1 {
+    text-align: center;
     margin: 2rem;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: flex-start;
-    background-color: #303633;
-    
   }
-  .SectionH1{
-    margin-top: 1rem;
-    color: #DAFFED;
+  .blogImg {
+    border-radius: 10%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .mapa {
+    width: 8rem;
+    height: 8rem;
     margin-left: 1rem;
-    text-align: left;
-    opacity: none;
   }
-  .blogP1{
-    opacity: none;
-    color: #DAFFED;
-  }
-  .blogP{
-    padding: 0.5rem;
-    margin: 1rem;
-    color: #DAFFED;
-  }
-  .blogImg{
-    width: 30rem;
-    height: 30rem;
-    opacity: none;
-  }
-  .BlogSection hr{
-    color: #DAFFED;
-  }
-  .mapa{
-    margin: 5rem;
-    align-items: flex-end;
-    border-radius: 15%;
-    border: 10px;
-    border-color: #303633;
-  }
-  /*PaginaMusica*/
-  .MusicDiv{
-    margin-left: 8rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-  }
-  .iframe1{
-    margin-right: 1rem;
-    width: 40%;
-    border-radius: 10%;
-  }
-  .iframe2{
-    width: 40%;
-    border-radius: 10%;
-  }
-  /*.h2{
-    grid-area: h2Place;
-    
-  }
-  .musica hr{
-    grid-area: hr;
-  }
-  .p{
-    grid-area: Pplace;
-  }*/
-  .musicaH1{
-    text-align: center;
-    font-weight: bold;
-  }
-  /*Artistas*/
-  .card{
-    /*border: 5px;*/
-    border-color: #303633;
-    margin: 3rem;
-    align-items: end;
-  }
-  .ArtistasMain{
-    margin: 3rem;
-  }
-  .ArtistasMain p{
+  /*Artista*/
+  .ArtistasMain h1 {
     text-align: center;
   }
-  .ArtistasMain h1{
-    margin: 1rem;
-    font-weight: bold;
-  }
-  @media (max-width:480px){
-    
-    footer{
-      width: 90%;
-    }
-    /*Index*/
-    .ContainerH1{
-      margin-top: 1.5rem;
-      margin-left: 38rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      width: 25rem;
-    }
-    .homeArticle{
-      display: flex;
-      flex-direction: column;
-    }
-    .homeSection{
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .articleImg{
-      margin-bottom: 5rem;
-      width: 60rem;
-      height: 38rem;
-    }
-    .homeP{
-      width: 75%;
-      text-align: center;
-      margin-left: 5rem;
-    }
-    /*Fotos*/
-    .FotosH1{
-      text-align: center;
-    }
-    /*Blog*/
-    .SectionH1{
-      text-align: center;
-    }
-    .blogP1{
-      text-align: center;
-      margin: 2rem;
-    }
-    .blogImg{
-      border-radius: 10%;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-    }
-    .mapa{
-
-      margin-left: 1rem;
-    }
-    /*Artista*/
-    .ArtistasMain h1{
-      text-align: center;
-     
-    }
-    /*Musica*/
-    .MusicDiv{
-      display: flex;
-      flex-direction: column;
-      margin: 2rem;
-  }
-  .iframe1{
-    width: 560px;
-    height: 315px;
-    min-width: 70%;
-    margin-bottom: 1rem;
-  }
-  .iframe2{
-    width: 560px;
-    min-width: 70%;
-    margin-top: 1rem;
-    height: 315px;
+  /*Musica*/
+  section div iframe {
+    width: 55%;
+    height: 40rem;
   }
 }
+header nav img {
+  width: 3.5rem;
+  height: 3rem;
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+  padding: 1rem;
+  margin-inline: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/*PagFotos*/
+.carousel-inner {
+  max-width: 100%;
+  height: 80rem;
+}
+
+.carousel-inner div img {
+  max-height: 780px;
+  padding: 5rem;
+}
+
+.FotosH1 {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+/*Footer*/
+footer {
+  margin-left: 3rem;
+  display: grid;
+  grid-template-areas: "item10 item50 item30";
+  width: 90%;
+}
+
+footer ul {
+  margin-left: 1rem;
+  grid-area: item30;
+  text-align: right;
+  list-style: none;
+}
+
+.social-icon img {
+  grid-area: item10;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+.textoFooter {
+  font-weight: bold;
+  color: black;
+}
+
+.enlaceFooter {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */

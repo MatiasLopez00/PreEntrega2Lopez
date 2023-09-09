@@ -1,25 +1,25 @@
 /*ContenidoArticle*/
     .homeArticle{
-        display: block;
         width: 90%;
         margin-left: 5rem;
             .H1index{
                 margin: 3rem;
-                font-weight: bold;
+                font-weight: bolder;
             }
             .homeSection{
                 padding: 2rem;
             }
             .hemeP{
+                text-align: left;
                  margin-left: 2rem;
             }  
             .articleImg{
-                margin-bottom: 5rem;
-                margin-left: 10rem;
-                width: 60rem;
+                margin: 10%;
+                width: 65%;
                 height: 38rem;
             }
       }
     .ContainerH1{
         margin: 3rem;
+        font-weight: bold;
     }

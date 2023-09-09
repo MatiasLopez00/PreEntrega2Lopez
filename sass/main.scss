@@ -1,12 +1,9 @@
-@use 'home';
-@use'musica';
-@use'artistas';
-@use 'blog';
-@use 'mobile';
-@use'legales';
-@use'header';
-@use 'fotos';
-@use 'footer';
-
-
-
+@import'home';
+@import'musica';
+@import'artistas';
+@import'blog';
+@import 'mobile';
+@import'legales';
+@import'header';
+@import 'fotos';
+@import 'footer';
