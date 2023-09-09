@@ -260,12 +260,16 @@ width: 100%;
       margin: 2rem;
   }
   .iframe1{
+    width: 560px;
+    height: 315px;
     min-width: 70%;
     margin-bottom: 1rem;
   }
   .iframe2{
-    margin-top: 1rem;
+    width: 560px;
     min-width: 70%;
+    margin-top: 1rem;
+    height: 315px;
   }
 }
 /*# sourceMappingURL=main.css.map */
