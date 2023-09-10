@@ -6,12 +6,20 @@
   }
   .ArtistasMain{
     margin: 3rem;
-        .ArtistasMain p{
-            text-align: center;
+        p{
+         text-align: center;
         }
-        .ArtistasMain h1{
-           margin: 1rem;
-           font-weight: bold;
+        h1{
+          margin: 1rem;
+          font-weight: bold;
+        }
+        .fotoartista{
+          width: 25rem;
+          height: 25rem;
+          margin: 5px;
         }
          
   }
+  .card{
+    margin-left: 65%;
+    }

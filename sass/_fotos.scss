@@ -1,12 +1,23 @@
 /*PagFotos*/
-.carousel-inner{
-    max-width: 100%;
-   height: 80rem;
+#carouselExampleIndicators{
+  .carousel-inner{
+    max-width: 95%!important;
+    height: 80%!important;
+    align-items: center!important;
+    margin-left: 10px;
+        carousel-item{
+          width: 90%!important;
+          height: 100%!important;
+          align-items: center!important;
+
+            .d-block w-100{
+                  height: 38rem!important;
+                  width: 94%!important;
+                  padding: 5rem;
+            } 
+      } 
   }
-  .carousel-inner div img{
-    max-height: 780px;
-   padding: 5rem;
-  }
+}
   .FotosH1{
     margin-top: 0.5rem;
     margin-left: 1rem;

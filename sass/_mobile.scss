@@ -3,38 +3,14 @@
   footer{
     width: 90%;
   }
-    /*Index*/
-  div.ContainerH1{
-    width: 90%;
-      h1{
-        text-align: center;
-      }
-
-  }
-  article.homeArticle{
-      section.homeSection{
-         padding: 5%;
-         display: flex;
-         flex-direction: column;
-              p.homeP{
-                width: 75%;
-                text-align: center;
-                margin-left: 5rem;
-              }
-              img.articleImg{
-              margin-bottom: 5rem;
-              width: 35%;
-              height: 35rem;
-              }
-      }
-
-
-  }
+  
 
 
     /*Fotos*/
   .FotosH1{
       text-align: center;
+      color: #5e548e;
+      font-weight: bolder;
     }
 
 
@@ -44,37 +20,87 @@
       height: 20%;
         h1{
           text-align: center;
+          color: white;
+          font-weight: bolder;
         }
 
     }
     .blogP1{
       text-align: center;
       margin: 2rem;
+      font-weight: 500;
     }
     .blogImg{
       border-radius: 10%;
       margin-top: 3rem;
       margin-bottom: 3rem;
     }
+    .divMapa{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } 
     .mapa{
-      width: 8rem;
-      height: 8rem;
-      margin-left: 1rem;
+      margin: 2rem;
+      width: 12rem;
+      height: 12rem;
     }
 
     /*Artista*/
-    .ArtistasMain h1{
-      text-align: center;
-    }
+    .ArtistasMain{
 
-    /*Musica*/
-    section{
-          div{
-            iframe{
-              width: 55%;
-              height: 40rem;
-            }
+          h1{
+            text-align: center;
           }
+          .fotoartista{
+            width: 15rem;
+            height: 15rem;
+            margin: 5px;
     }
 
-}
+    }
+    /*Musica*/
+    .musicaH1{
+      color: #5e548e;
+      font-weight: bolder;
+    }
+    .ArtistasMain{
+        h1{
+          text-align: center;
+        }
+        .fotoartista{
+          width: 15rem;
+          height: 15rem;
+          margin: 5px;
+        }
+
+    }
+    .card{
+      display: none;
+    }
+        /*Home*/
+        .containerH1{
+          h1{
+            text-align: center;
+            color: #5e548e;
+            font-weight: bolder;
+          }
+      }
+      .homeArticle{
+        .homeSection{
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+            .articleImg{
+              width: 50%;
+              height: 30rem;
+              margin-bottom: 10px;
+            }
+            .homeP{
+              text-align: center;
+              margin: 3px;
+            }
+        }
+      }
+
+    }

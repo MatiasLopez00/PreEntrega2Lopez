@@ -45,8 +45,13 @@
   border-radius: 10%;
 }
 
+.musicaH1:hover {
+  color: #c8b6ff;
+}
+
 .musicaH1 {
   text-align: center;
+  margin: 2%;
   font-weight: bold;
 }
 
@@ -60,12 +65,21 @@
 .ArtistasMain {
   margin: 3rem;
 }
-.ArtistasMain .ArtistasMain p {
+.ArtistasMain p {
   text-align: center;
 }
-.ArtistasMain .ArtistasMain h1 {
+.ArtistasMain h1 {
   margin: 1rem;
   font-weight: bold;
+}
+.ArtistasMain .fotoartista {
+  width: 25rem;
+  height: 25rem;
+  margin: 5px;
+}
+
+.card {
+  margin-left: 65%;
 }
 
 /*PaginaBlog*/
@@ -93,7 +107,7 @@
   color: #DAFFED;
 }
 .BlogSection .blogImg {
-  width: 25%;
+  width: 75%;
   height: 90%;
   opacity: none;
 }
@@ -109,68 +123,6 @@
   border-color: #303633;
 }
 
-@media (max-width: 480px) {
-  footer {
-    width: 90%;
-  }
-  /*Index*/
-  div.ContainerH1 {
-    width: 90%;
-  }
-  div.ContainerH1 h1 {
-    text-align: center;
-  }
-  article.homeArticle section.homeSection {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-  }
-  article.homeArticle section.homeSection p.homeP {
-    width: 75%;
-    text-align: center;
-    margin-left: 5rem;
-  }
-  article.homeArticle section.homeSection img.articleImg {
-    margin-bottom: 5rem;
-    width: 35%;
-    height: 35rem;
-  }
-  /*Fotos*/
-  .FotosH1 {
-    text-align: center;
-  }
-  /*Blog*/
-  .SectionH1 {
-    width: 100%;
-    height: 20%;
-  }
-  .SectionH1 h1 {
-    text-align: center;
-  }
-  .blogP1 {
-    text-align: center;
-    margin: 2rem;
-  }
-  .blogImg {
-    border-radius: 10%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-  .mapa {
-    width: 8rem;
-    height: 8rem;
-    margin-left: 1rem;
-  }
-  /*Artista*/
-  .ArtistasMain h1 {
-    text-align: center;
-  }
-  /*Musica*/
-  section div iframe {
-    width: 55%;
-    height: 40rem;
-  }
-}
 header nav img {
   width: 3.5rem;
   height: 3rem;
@@ -185,13 +137,20 @@ header nav img {
 }
 
 /*PagFotos*/
-.carousel-inner {
-  max-width: 100%;
-  height: 80rem;
+#carouselExampleIndicators .carousel-inner {
+  max-width: 95% !important;
+  height: 80% !important;
+  align-items: center !important;
+  margin-left: 10px;
 }
-
-.carousel-inner div img {
-  max-height: 780px;
+#carouselExampleIndicators .carousel-inner carousel-item {
+  width: 90% !important;
+  height: 100% !important;
+  align-items: center !important;
+}
+#carouselExampleIndicators .carousel-inner carousel-item .d-block w-100 {
+  height: 38rem !important;
+  width: 94% !important;
   padding: 5rem;
 }
 
@@ -232,6 +191,93 @@ footer ul {
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  footer {
+    width: 90%;
+  }
+  /*Fotos*/
+  .FotosH1 {
+    text-align: center;
+    color: #5e548e;
+    font-weight: bolder;
+  }
+  /*Blog*/
+  .SectionH1 {
+    width: 100%;
+    height: 20%;
+  }
+  .SectionH1 h1 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+  }
+  .blogP1 {
+    text-align: center;
+    margin: 2rem;
+    font-weight: 500;
+  }
+  .blogImg {
+    border-radius: 10%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .divMapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mapa {
+    margin: 2rem;
+    width: 12rem;
+    height: 12rem;
+  }
+  /*Artista*/
+  .ArtistasMain h1 {
+    text-align: center;
+  }
+  .ArtistasMain .fotoartista {
+    width: 15rem;
+    height: 15rem;
+    margin: 5px;
+  }
+  /*Musica*/
+  .musicaH1 {
+    color: #5e548e;
+    font-weight: bolder;
+  }
+  .ArtistasMain h1 {
+    text-align: center;
+  }
+  .ArtistasMain .fotoartista {
+    width: 15rem;
+    height: 15rem;
+    margin: 5px;
+  }
+  .card {
+    display: none;
+  }
+  /*Home*/
+  .containerH1 h1 {
+    text-align: center;
+    color: #5e548e;
+    font-weight: bolder;
+  }
+  .homeArticle .homeSection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .homeArticle .homeSection .articleImg {
+    width: 50%;
+    height: 30rem;
+    margin-bottom: 10px;
+  }
+  .homeArticle .homeSection .homeP {
+    text-align: center;
+    margin: 3px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
